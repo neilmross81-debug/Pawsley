@@ -1,0 +1,179 @@
+/* ═══════════════════════════════════════════
+   Pawsley Auth — Baby Blue theme
+   Primary blue #89CFF0 | Accent gold #c9a943
+═══════════════════════════════════════════ */
+
+.auth-content {
+    --background: var(--ion-color-primary);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.auth-page-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background: var(--ion-color-primary);
+}
+
+/* ── Hero / branding panel ── */
+.auth-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 64px 24px 48px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* Logo: use screen blend so white background disappears on dark teal */
+.auth-logo {
+    display: none;
+}
+
+.auth-logo-wordmark {
+    font-size: 4.2rem;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    margin: -10px 0 6px;
+    line-height: 1;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-logo-tagline {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.72);
+    margin: 0;
+    font-style: italic;
+    letter-spacing: 0.3px;
+}
+
+/* ── White card panel ── */
+.auth-card {
+    background: #ffffff;
+    border-radius: 28px 28px 0 0;
+    padding: 32px 24px 40px;
+    flex: 1;
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.12);
+}
+
+.auth-card-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--ion-color-primary);
+    letter-spacing: -0.5px;
+    margin: 0 0 4px;
+}
+
+.auth-card-subtitle {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin: 0 0 24px;
+}
+
+/* ── Input fields ── */
+.auth-input {
+    --background: #ffffff;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #e2e8f0;
+    --padding-start: 16px;
+    --padding-end: 16px;
+    --highlight-color-focused: var(--ion-color-primary);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+.auth-input.item-has-focus {
+    border-color: var(--ion-color-primary);
+    box-shadow: 0 0 0 4px rgba(var(--ion-color-primary-rgb), 0.15);
+    background: #fff;
+    transform: translateY(-1px);
+}
+
+.auth-input ion-input {
+    color: #0f172a;
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+/* ── Primary button ── */
+.auth-btn {
+    margin-top: 20px;
+    --border-radius: 12px;
+    --background: var(--ion-color-primary);
+    --background-hover: var(--ion-color-primary-shade);
+    --background-activated: var(--ion-color-primary-shade);
+    --color: var(--ion-color-primary-contrast);
+    --box-shadow: none;
+    font-weight: 700;
+    font-size: 1rem;
+    height: 52px;
+    letter-spacing: 0.3px;
+}
+
+/* ── Footer link ── */
+.auth-footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    flex-wrap: wrap;
+}
+
+.auth-footer ion-button {
+    --color: var(--ion-color-primary-contrast);
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+/* ── Role picker segment ── */
+.role-segment {
+    margin-bottom: 20px;
+    background: #f1f5f9;
+    border-radius: 12px;
+    padding: 3px;
+}
+
+.role-segment ion-segment-button {
+    --indicator-color: var(--ion-color-primary);
+    --color: #64748b;
+    --color-checked: var(--ion-color-primary-contrast);
+    font-weight: 600;
+    padding: 4px 0;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+/* ── Sub-page toolbar ── */
+.pawsley-toolbar {
+    --background: var(--ion-color-primary);
+    --border-width: 0;
+    --color: var(--ion-color-primary-contrast);
+}
+
+.pawsley-toolbar ion-title {
+    color: #ffffff;
+}
+
+/* ── Seed button ── */
+.seed-btn-wrap {
+    margin-top: 24px;
+    text-align: center;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 20px;
+}
+
+.seed-btn-wrap p {
+    font-size: 0.78rem;
+    color: #94a3b8;
+    margin: 6px 0 0;
+}

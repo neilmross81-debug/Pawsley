@@ -1,0 +1,66 @@
+/* ══════════════════════════════════════
+   Pawsley — Shared Bottom Navigation Bar
+   Pastel teal #2a9d8f | Gold #c9a943
+══════════════════════════════════════ */
+
+.paw-tabbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    background: #ffffff;
+    display: flex;
+    align-items: stretch;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -2px 16px rgba(0, 0, 0, 0.06);
+    z-index: 1000;
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    padding-bottom: constant(safe-area-inset-bottom, 0px);
+}
+
+.paw-tab {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px 4px;
+    outline: none;
+    transition: opacity 0.15s ease, transform 0.15s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.paw-tab:active {
+    transform: scale(0.92);
+}
+
+.paw-tab-icon {
+    font-size: 1.4rem;
+    color: #9caea9;
+    transition: color 0.15s ease;
+}
+
+.paw-tab-label {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 0.62rem;
+    font-weight: 600;
+    color: #9caea9;
+    letter-spacing: 0.2px;
+    transition: color 0.15s ease;
+    white-space: nowrap;
+}
+
+/* Active state */
+.paw-tab--active .paw-tab-icon {
+    color: var(--ion-color-primary);
+}
+
+.paw-tab--active .paw-tab-label {
+    color: var(--ion-color-primary);
+    font-weight: 700;
+}

@@ -1,0 +1,211 @@
+/*  ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ?
+   Profile / Account ?" Baby Blue
+   Blue #89CFF0 | Gold accent #c9a943
+ ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? */
+
+/* "?"? Full?'height background scrolls normally "?"? */
+.acct-content {
+    --background: #f4f8fb;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* "?"? Hero banner "?"? */
+.acct-hero {
+    background: var(--ion-color-primary);
+    padding: 52px 24px 28px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.acct-avatar {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background: #c9a943;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgba(255, 255, 255, 0.35);
+    flex-shrink: 0;
+    letter-spacing: -1px;
+}
+
+.acct-hero-text {
+    flex: 1;
+}
+
+.acct-hero-name {
+    margin: 0 0 4px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+}
+
+.acct-hero-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+    padding: 3px 12px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.92);
+    letter-spacing: 0.2px;
+}
+
+/* "?"? Scrollable white body "?"? */
+.acct-body {
+    padding: 20px 16px 32px;
+    background: #f4f8fb;
+}
+
+/* Section labels like "Payment information" */
+.acct-section-title {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #6b7280;
+    margin: 20px 4px 8px;
+}
+
+/* White card containing list rows */
+.acct-card {
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+    border: 1px solid #e2e8f0;
+}
+
+/* Each row */
+.acct-row {
+    --background: transparent;
+    --padding-start: 16px;
+    --padding-end: 16px;
+    --min-height: 56px;
+    --border-color: #f1f5f9;
+}
+
+.acct-row-icon {
+    font-size: 1.2rem;
+    margin-right: 14px;
+    width: 24px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.acct-row-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #94a3b8;
+    margin: 0 0 2px !important;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+/* Inline editable inputs within rows */
+.acct-inline-input {
+    --padding-start: 0;
+    --padding-end: 0;
+    --padding-top: 2px;
+    --padding-bottom: 4px;
+    font-size: 1rem;
+    color: #1a2e2c;
+    font-weight: 500;
+}
+
+/* Baby Blue save button */
+.acct-save-btn {
+    --background: var(--ion-color-primary);
+    --background-hover: var(--ion-color-primary-shade);
+    --border-radius: 12px;
+    --box-shadow: none;
+    --color: var(--ion-color-primary-contrast);
+    margin: 10px 0 4px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    height: 50px;
+    letter-spacing: 0.2px;
+}
+
+/* ── Keep old profile-section / profile-input for the dog form ── */
+.profile-content {
+    --background: #f0f4f3;
+}
+
+.profile-section {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+    margin-bottom: 1.5rem;
+}
+
+.profile-section h2 {
+    font-weight: 800;
+    color: #1e293b;
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+}
+
+.profile-section p {
+    color: #64748b;
+    margin-bottom: 1.25rem;
+    font-size: 0.9rem;
+}
+
+.profile-input {
+    --background: #f8fafc;
+    --padding-start: 16px;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    border: 1px solid #e2e8f0;
+}
+
+/* Clean dog form inputs */
+.acct-dog-input {
+    --background: transparent;
+    --padding-start: 0;
+    --padding-end: 0;
+    --inner-padding-end: 0;
+    margin-bottom: 8px;
+}
+
+.acct-dog-input-field {
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 8px 12px;
+    background: #fff;
+    width: 100%;
+    margin-top: 6px;
+    --padding-start: 8px;
+}
+
+.action-btn {
+    margin-top: 1.5rem;
+    --border-radius: 12px;
+    --background: var(--ion-color-primary);
+    --background-hover: var(--ion-color-primary-shade);
+    --color: var(--ion-color-primary-contrast);
+    font-weight: 700;
+    height: 50px;
+}
+
+.dog-list {
+    background: transparent;
+    padding: 0;
+}
+
+.dog-badge {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 6px;
+}

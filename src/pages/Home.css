@@ -1,0 +1,258 @@
+/* ═══════════════════════════════════════════
+   Pawsley Home — Baby Blue theme
+   Primary blue #89CFF0 | Accent gold #c9a943
+═══════════════════════════════════════════ */
+
+.home-content {
+    --background: #f4f8fb;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* ── Header ── */
+.bk-header-wrapper {
+    background: var(--ion-color-primary);
+    padding-bottom: 0;
+}
+
+.bk-toolbar {
+    --background: var(--ion-color-primary);
+    --border-width: 0;
+    --padding-top: 8px;
+    --padding-bottom: 8px;
+}
+
+.bk-title {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Avatar circle */
+.bk-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #c9a943;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 0.85rem;
+    color: #ffffff;
+    cursor: pointer;
+    margin-right: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.15s ease;
+}
+
+.bk-avatar:hover {
+    transform: scale(1.05);
+}
+
+/* Notification badge */
+.bk-badge {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background: #ff3b30;
+    color: white;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    border: 1.5px solid var(--ion-color-primary);
+}
+
+/* Hero greeting */
+.bk-hero {
+    padding: 16px 20px 24px;
+    background: var(--ion-color-primary);
+}
+
+.bk-hero-sub {
+    margin: 0;
+    color: #1e293b;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.bk-hero-name {
+    margin: 2px 0 0;
+    color: #1e293b;
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+/* ── Content Area ── */
+.bk-content {
+    padding: 16px 16px 24px;
+}
+
+.bk-section {
+    margin-bottom: 20px;
+}
+
+.bk-section-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a2e2c;
+    margin: 0 0 12px;
+    letter-spacing: -0.2px;
+}
+
+/* Cards */
+.bk-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.04);
+}
+
+.alert-card {
+    border-left: 4px solid #c9a943;
+}
+
+/* Quick-action icon grid */
+.bk-card-row {
+    display: flex;
+    gap: 10px;
+}
+
+.bk-quick-card {
+    flex: 1;
+    background: #ffffff;
+
+    border-radius: 12px;
+    padding: 14px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07), 0 0 0 1px rgba(0, 0, 0, 0.04);
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.bk-quick-card:hover,
+.bk-quick-card:active {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(137, 207, 240, 0.3);
+}
+
+.bk-quick-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Service list cards */
+.bk-service-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 16px;
+    cursor: pointer;
+    transition: box-shadow 0.15s ease;
+}
+
+.bk-service-card:hover {
+    box-shadow: 0 4px 16px rgba(137, 207, 240, 0.25);
+}
+
+.bk-service-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: #e0f2fe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.bk-service-info {
+    flex: 1;
+}
+
+.bk-service-info h3 {
+    margin: 0 0 2px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1a2e2c;
+}
+
+.bk-service-info p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.bk-chevron {
+    font-size: 1.4rem;
+    color: #9e9e9e;
+    font-weight: 300;
+}
+
+/* Buttons */
+.bk-btn-primary {
+    --background: var(--ion-color-primary);
+    --background-hover: var(--ion-color-primary-shade);
+    --border-radius: 8px;
+    --color: var(--ion-color-primary-contrast);
+    font-weight: 700;
+}
+
+.bk-btn-outline {
+    --background: transparent;
+    --border-color: var(--ion-color-primary);
+    --border-width: 1.5px;
+    --border-style: solid;
+    --border-radius: 8px;
+    --color: var(--ion-color-primary-contrast);
+    font-weight: 700;
+    --background-hover: #f0f9ff;
+}
+
+.bk-btn-text-red {
+    --color: #c62828;
+}
+
+/* ── Bottom Tab Bar ── */
+.bk-tabbar {
+    --background: #ffffff;
+    --border: 0.5px solid rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.bk-tabbutton {
+    --color: #888;
+    --color-selected: #1e293b;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+/* ── Sub-page toolbars ── */
+.pawsley-toolbar {
+    --background: var(--ion-color-primary);
+    --color: var(--ion-color-primary-contrast);
+    --border-width: 0;
+}
+
+.pawsley-toolbar-home {
+    --background: var(--ion-color-primary);
+    --color: var(--ion-color-primary-contrast);
+    --border-width: 0;
+}

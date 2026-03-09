@@ -1,0 +1,32 @@
+.marketplace-content {
+    --background: #f8fafc;
+}
+
+.marketplace-container {
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.marketplace-container h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #1e293b;
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+}
+
+.marketplace-container p {
+    color: #64748b;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.marketplace-input {
+    --background: #f8fafc;
+    --padding-start: 16px;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    border: 1px solid #e2e8f0;
+}
